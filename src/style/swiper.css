@@ -1,0 +1,62 @@
+.game-container {
+    border: solid 1px black;
+    width: 70%;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+.mySwiper {
+    height: 100%;
+}
+
+.swiper-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.swiper-wrapper .swiper-slide {
+    position: relative;
+    flex-shrink: 0;
+    transition-property: transform;
+    display: block;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.swiper-slide-active::after {
+    top: 0px;
+    right: 0px;
+    content: "";
+    height: 300px;
+    width: 315px;
+    border: solid 3px rgb(172, 172, 245);
+    position: absolute;
+}
+
+.game-name {
+    color: var(--text-color);
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    position: absolute;
+    top: -35px;
+    visibility: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.game-name.active {
+    visibility: visible;
+}
+
+.game-img {
+    width: 100%;
+    height: 100%;
+}
