@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 30,
         centeredSlides: false,
         on: {
-            init: function () {
+            init: 
+                function () {
                 updateElementsClass('.game-name', 'active', el => el.closest('.swiper-slide-active'));
             },
             slideChangeTransitionEnd: function () {

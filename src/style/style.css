@@ -26,3 +26,11 @@ i:hover {
     transform: rotate(180deg);
 }
 
+.validator-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.active-button {
+    color: red;
+}
